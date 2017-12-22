@@ -1,0 +1,44 @@
+// To push changes on githubpages
+// ng build --prod --base-href "https://Cl3r1k.github.io/Angular-Camper-Leaderboard/"
+// angular-cli-ghpages --repo=https://github.com/Cl3r1k/Angular-Camper-Leaderboard.git --name=Cl3r1k --email=cl3r1k2@gmail.com --no-silent
+
+Todos:
+    New:
+        Current:
+            ✔ Update Readme.md @done(17-12-22 15:50)
+    
+            ☐ Write business logic (look here https://codepen.io/freeCodeCamp/full/eZGMjp)
+                ☐ I can see a table of the freeCodeCamp campers who've earned the most brownie points in the past 30 days.
+                ☐ I can see how many brownie points they've earned in the past 30 days, and how many they've earned total.
+                ☐ I can toggle between sorting the list by how many brownie points they've earned in the past 30 days and by how many brownie points they've earned total.
+
+                    
+            ☐ Change footer icon
+
+            Hint:
+                ☐ To get the top 100 campers for the last 30 days: https://fcctop100.herokuapp.com/api/fccusers/top/recent
+                ☐ To get the top 100 campers of all time: : https://fcctop100.herokuapp.com/api/fccusers/top/alltime
+
+            ☐ Build UI (examples are bellow)
+                ☐ Some UI ideas from:
+                    ``
+                    ``
+                    ``
+
+            ✔ Add 'Fork on github' in the corner or github share link (like here https://codepen.io/hmps/pen/kiFum) (used ribbon) @done(17-12-22 15:56)
+            ✔ Add spinner before Angular component loading (use https://jsfiddle.net/Cl3r1k/hyqdzgfn/) @done(17-12-22 15:55)
+            ✔ Change flexbox to CSS Grids (look here https://proglib.io/p/css-grid-vs-bootstrap/ and here https://proglib.io/p/css-grid/) @done(17-12-22 15:55)
+            ✔ Add footer (preferably fixed bottom) @done(17-12-22 15:55)
+                ✔ Steaky-footer on CSS Grid (look here https://codepen.io/matuzo/pen/JOyzOj?editors=1100) @done(17-12-22 15:55)
+            
+            ☐ Correct e2e test
+            ☐ Write Unit tests
+            ☐ Deploy on gh-pages
+            ☐ Deploy on codepen (https://codepen.io/Cl3r1k/pen/)
+            
+    Done:
+        
+
+    Canceled:
+        
+        

@@ -1,0 +1,27 @@
+.wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    .input-text {
+        min-height: 150px;
+        margin: 0;
+        padding: 30px;
+        grid-column: span 6;
+        resize: none;
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.4);
+        background-color: #eeeeee;
+        &:focus {
+            outline: none;
+        }
+    }
+    .output-text {
+        @extend .input-text;
+        text-align: initial;
+        max-height: initial;
+        grid-column: span 6;
+        background-color: white;
+        border-right: none;
+        overflow: auto;
+    }
+}
