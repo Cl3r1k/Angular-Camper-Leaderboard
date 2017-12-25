@@ -1,27 +1,64 @@
 .wrapper {
+    margin: 30px 0 30px 0;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    .input-text {
+    .users-list {
         min-height: 150px;
         margin: 0;
-        padding: 30px;
-        grid-column: span 6;
-        resize: none;
-        border: none;
-        border-right: 1px solid rgba(0, 0, 0, 0.4);
-        background-color: #eeeeee;
-        &:focus {
-            outline: none;
+        grid-column: 4/10;
+        .users-table {
+            display: grid;
+            tr {
+                background-color: white;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                transition: background-color 0.4s linear;
+                &:first-child {
+                    line-height: 2.5em;
+                    border-top: 1px solid black;
+                    &:hover {
+                        background-color: #eee;
+                    }
+                }
+                &:nth-child(odd) {
+                    background-color: #eee;
+                }
+                &:last-child {
+                    border-bottom: 1px solid black;
+                }
+                &:hover {
+                    background-color: aqua;
+                }
+                th,
+                td {
+                    border: 1px solid #d1d1d1;
+                    height: 50px;
+                    line-height: 50px;
+                    grid-column: span 3;
+                    text-align: center;
+                    &:nth-child(1) {
+                        grid-column: span 1;
+                    }
+                    &:nth-child(2) {
+                        grid-column: span 5;
+                        text-align: left;
+                        padding-left: 10px;
+                        img {
+                            vertical-align: middle;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
         }
-    }
-    .output-text {
-        @extend .input-text;
-        text-align: initial;
-        max-height: initial;
-        grid-column: span 6;
-        background-color: white;
-        border-right: none;
-        overflow: auto;
+        .avatar {
+            height: 40px;
+            width: 40px;
+            border: 3px solid red;
+            border-radius: 5px;
+        }
     }
 }

@@ -16,7 +16,7 @@
 </svg>
 
 <div class="github-ribbon">
-    <a class="github-ribbon__link" href="https://github.com/Cl3r1k/Angular-Markdown-Previewer" title="Fork me on GitHub" target="_blank">Fork me on GitHub</a>
+    <a class="github-ribbon__link" href="https://github.com/Cl3r1k/Angular-Camper-Leaderboard" title="Fork me on GitHub" target="_blank">Fork me on GitHub</a>
 </div>
 
 <div class='grid-container'>
@@ -30,6 +30,34 @@
         <div class='wrapper'>
             <!-- <textarea [(ngModel)]='rawText' class='input-text'></textarea>
             <div class='output-text' [innerHTML]='outputHTML'></div> -->
+            <!-- <button (click)='getUserList(0)'>Get list fccusers</button> -->
+
+            <div class='users-list'>
+                <table class='users-table'>
+                    <tr>
+                        <th class='number'>#</th>
+                        <th>Camper Name</th>
+                        <th>Points in past 30 days</th>
+                        <th>All time points</th>
+                    </tr>
+                    <tr *ngFor='let user of usersList; let i = index' class='table-data'>
+                        <td>{{i + 1}}</td>
+                        <td>
+                            <a href='https://www.freecodecamp.com/{{user.username}}' target="_blank"><img src='{{user.img}}' alt={{user.username}} class='avatar'>{{user.username}}</a>
+                        </td>
+                        <td>{{user.recent}}</td>
+                        <td>{{user.alltime}}</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- <ul class='users-list'>
+                <li *ngFor='let user of usersList; let i = index'>
+                    {{i}}
+                    <img src='{{user.img}}' alt={{user.username}} class='avatar'>
+                    <a href='https://www.freecodecamp.com/{{user.username}}' target="_blank">{{user.username}}</a> {{user.recent}} {{user.alltime}}
+                </li>
+            </ul> -->
         </div>
     </div>
     <div class='footer'>
