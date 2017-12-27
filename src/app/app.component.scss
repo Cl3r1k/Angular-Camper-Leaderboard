@@ -24,7 +24,7 @@
                     }
                 }
                 &:nth-child(odd) {
-                    background-color: #eee;
+                    background-color: #ebf4fb;
                 }
                 &:last-child {
                     border-bottom: 1px solid black;
@@ -47,18 +47,27 @@
                         text-align: left;
                         padding-left: 10px;
                         img {
+                            height: 40px;
+                            width: 40px;
+                            border: 2px solid #c9c9c9;
+                            border-radius: 5px;
                             vertical-align: middle;
                             margin-right: 5px;
                         }
                     }
+                    &.btn {
+                        &:hover {
+                            background-color: #cccccc;
+                        }
+                        .sort-by {
+                            text-decoration: underline;
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
                 }
             }
-        }
-        .avatar {
-            height: 40px;
-            width: 40px;
-            border: 3px solid red;
-            border-radius: 5px;
         }
     }
 }
