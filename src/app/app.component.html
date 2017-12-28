@@ -34,10 +34,12 @@
                         <th class='number'>#</th>
                         <th>Camper Name</th>
                         <th class='btn'>
-                            <span class='sort-by' (click)='loadMonthlyPoints()'>Points in past 30 days</span><span *ngIf='state === 1'>*</span>
+                            <span class='sort-by' (click)='loadMonthlyPoints("recent")'>Points in past 30 days</span>
+                            <span class='arrow' [class.desc]='isDesc' *ngIf='state === 1'></span>
                         </th>
                         <th class='btn'>
-                            <span class='sort-by' (click)='loadAllTimePoints()'>All time points</span><span *ngIf='state === 2'>*</span>
+                            <span class='sort-by' (click)='loadAllTimePoints("alltime")'>All time points</span>
+                            <span class='arrow' [class.desc]='isDesc' *ngIf='state === 2'></span>
                         </th>
                     </tr>
                     <tr *ngFor='let user of usersList; let i = index' class='table-data'>

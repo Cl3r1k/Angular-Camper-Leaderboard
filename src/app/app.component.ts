@@ -26,6 +26,7 @@ export class AppComponent implements OnInit {
 
     state: number;
     dataLoaded = false;
+    isDesc = false;
     API_URLS = ['https://fcctop100.herokuapp.com/api/fccusers/top/recent', 'https://fcctop100.herokuapp.com/api/fccusers/top/alltime'];
     usersList: User[] = [];
 
@@ -59,13 +60,39 @@ export class AppComponent implements OnInit {
         });
     }
 
-    loadMonthlyPoints() {
-        this.getUserList(0);
-        this.state = 1;
+    loadMonthlyPoints(tableName: string) {
+        if (this.state === 1) {
+            this.sortBy(tableName);
+        } else {
+            this.getUserList(0);
+            this.state = 1;
+            this.isDesc = false;
+        }
     }
 
-    loadAllTimePoints() {
-        this.getUserList(1);
-        this.state = 2;
+    loadAllTimePoints(tableName: string) {
+        if (this.state === 2) {
+            this.sortBy(tableName);
+        } else {
+            this.getUserList(1);
+            this.state = 2;
+            this.isDesc = false;
+        }
+    }
+
+    sortBy(tableName: string) {
+        console.log('sort by: ', tableName);
+        this.isDesc = !this.isDesc;
+        const direction = this.isDesc ? 1 : -1;
+
+        this.usersList.sort((a, b) => {
+            if (a[tableName] < b[tableName]) {
+                return -1 * direction;
+            } else if (a[tableName] > b[tableName]) {
+                return 1 * direction;
+            } else {
+                return 0;
+            }
+        });
     }
 }
