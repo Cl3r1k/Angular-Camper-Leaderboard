@@ -17,14 +17,14 @@ Todos:
                 ✔ I can toggle between sorting the list by how many brownie points they've earned in the past 30 days and by how many brownie points they've earned total. @done(17-12-27 17:51)
                 ✔ Make asceding/descending sorting @done(17-12-28 17:47)
                     
-            ☐ Change header icon
-            ☐ Change footer icon
+            ✔ Change header icon @done(17-12-28 17:58)
+            ✔ Change footer icon @done(17-12-28 17:58)
 
             ✔ Use onHover animation and transition @done(17-12-25 18:52)
 
             Hint:
-                ☐ To get the top 100 campers for the last 30 days: https://fcctop100.herokuapp.com/api/fccusers/top/recent
-                ☐ To get the top 100 campers of all time: https://fcctop100.herokuapp.com/api/fccusers/top/alltime
+                ✔ To get the top 100 campers for the last 30 days: https://fcctop100.herokuapp.com/api/fccusers/top/recent @done(17-12-28 17:47)
+                ✔ To get the top 100 campers of all time: https://fcctop100.herokuapp.com/api/fccusers/top/alltime @done(17-12-28 17:47)
 
             ☐ Build UI (examples are bellow)
                 ☐ Some UI ideas from:
