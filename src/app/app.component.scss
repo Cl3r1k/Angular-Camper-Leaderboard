@@ -7,9 +7,19 @@
         min-height: 150px;
         margin: 0;
         grid-column: 4/10;
+        .table-header {
+            border: 1px solid #4a4a4a;
+            background-color: #4a4a4a;
+            text-align: center;
+            font-weight: 900;
+            color: white;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
         .users-table {
             display: grid;
             tr {
+                border-radius: 3px;
                 background-color: white;
                 border-left: 1px solid black;
                 border-right: 1px solid black;

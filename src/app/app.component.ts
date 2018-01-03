@@ -26,6 +26,8 @@ export class AppComponent implements OnInit {
 
     state: number;
     dataLoaded = false;
+    hiddenSocialIcons = true;
+    iconsHovered = false;
     isDesc = false;
     API_URLS = ['https://fcctop100.herokuapp.com/api/fccusers/top/recent', 'https://fcctop100.herokuapp.com/api/fccusers/top/alltime'];
     usersList: User[] = [];
@@ -56,6 +58,7 @@ export class AppComponent implements OnInit {
             });
 
             this.dataLoaded = true;
+            this.hiddenSocialIcons = false;
             // console.log('users list: ', this.usersList);
         });
     }
@@ -94,5 +97,9 @@ export class AppComponent implements OnInit {
                 return 0;
             }
         });
+    }
+
+    toggleSocialIconsState() {
+        this.hiddenSocialIcons = !this.hiddenSocialIcons;
     }
 }
