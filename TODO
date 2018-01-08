@@ -9,6 +9,7 @@ Todos:
 
             ✔ Use preloader for response (show loader until list will be updated from response) @done(17-12-27 17:48)
             ✔ Add social icons (look here https://blog.angular-university.io/rxjs-switchmap-operator/) @done(18-01-03 18:40)
+            ✔ Use switchMap to perform only last request (https://codecraft.tv/courses/angular/http/http-with-observables/) @done(18-01-05 18:09)
     
             ✔ Write business logic (look here https://codepen.io/freeCodeCamp/full/eZGMjp) @done(17-12-28 18:00)
                 ✔ I can see a table of the freeCodeCamp campers who've earned the most brownie points in the past 30 days. @done(17-12-25 18:53)
@@ -27,7 +28,7 @@ Todos:
 
             ✔ Build UI (examples are bellow) @done(18-01-03 18:39)
                 ✔ Some UI ideas from: @done(18-01-03 18:39)
-                    `https://premium-volleyball.surge.sh/` (Header center, highlight hover sorting fields)
+                    `https://premium-volleyball.surge.sh/` (Header centered, highlight hover sorting fields)
                     `https://fcctop100.herokuapp.com/`
                     `https://codepen.io/AlexOleynyk/pen/gLLyNq?q=Camper+Leaderboard&limit=all&type=type-pens`
                     `https://codepen.io/vhfmag/pen/YwJaoG?limit=all&page=5&q=Camper+Leaderboard`
@@ -47,6 +48,5 @@ Todos:
         
 
     Canceled:
-        ✘ Use switchMap to perform only last request (https://habrahabr.ru/post/337512/) -> no need @cancelled(17-12-27 16:55)
-        ✘ Use lazyLoading for images (next time) @cancelled(18-01-03 18:40)
+        ✘ Use lazyLoading for images -> (next time) @cancelled(18-01-03 18:40)
         

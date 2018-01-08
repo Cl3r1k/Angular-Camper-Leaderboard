@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { map } from 'rxjs/operators/map';
+import { Observable } from 'rxjs/Observable';
+
+import 'rxjs/add/observable/of';
+import 'rxjs/add/operator/switchMap';
 
 class User {
     username: string;
@@ -43,48 +46,46 @@ export class AppComponent implements OnInit {
     }
 
     initApp() {
-        this.getUserList(0);
-        this.state = 1;
+        this.doSearch('recent');
+        this.hiddenSocialIcons = false;
     }
 
-    getUserList(val: number) {
-        this._httpClient.get(this.API_URLS[val]).subscribe((result) => {
-            // console.log(result);
-            this.usersList = [];
-
-            Object.keys(result).forEach(key => {
-                // console.log('item: ', result[key]);
-                this.usersList.push(new User(result[key].username, result[key].recent, result[key].alltime, result[key].img));
-            });
-
-            this.dataLoaded = true;
-            this.hiddenSocialIcons = false;
-            // console.log('users list: ', this.usersList);
-        });
+    getUserList(val: number): Observable<any> {
+        return this._httpClient.get(this.API_URLS[val]);
     }
 
-    loadMonthlyPoints(tableName: string) {
-        if (this.state === 1) {
-            this.sortBy(tableName);
+    doSearch(tableName: string) {
+        let newSearch = false;
+
+        if (tableName === 'recent') {
+            if (this.state === 1) {
+                this.sortBy(tableName);
+            } else {
+                newSearch = true;
+                this.state = 1;
+                this.isDesc = false;
+            }
         } else {
-            this.getUserList(0);
-            this.state = 1;
-            this.isDesc = false;
+            if (this.state === 2) {
+                this.sortBy(tableName);
+            } else {
+                newSearch = true;
+                this.state = 2;
+                this.isDesc = false;
+            }
         }
-    }
 
-    loadAllTimePoints(tableName: string) {
-        if (this.state === 2) {
-            this.sortBy(tableName);
-        } else {
-            this.getUserList(1);
-            this.state = 2;
-            this.isDesc = false;
+        if (newSearch) {
+            Observable.of(this.state - 1).switchMap((urlIndex) => {
+                return this.getUserList(urlIndex);
+            }).subscribe((res) => {
+                this.usersList = res;
+                this.dataLoaded = true;
+            });
         }
     }
 
     sortBy(tableName: string) {
-        console.log('sort by: ', tableName);
         this.isDesc = !this.isDesc;
         const direction = this.isDesc ? 1 : -1;
 

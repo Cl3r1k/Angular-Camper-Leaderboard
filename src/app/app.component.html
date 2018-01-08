@@ -57,7 +57,7 @@
 </div>
 
 <div class='hide-wrapper' [class.offset]='!hiddenSocialIcons' [class.icons-hovered]='!iconsHovered' (click)='toggleSocialIconsState()'>
-    <span class='arrow' [class.reverse]='!hiddenSocialIcons' *ngIf='state === 1'></span>
+    <span class='arrow' [class.reverse]='!hiddenSocialIcons'></span>
 </div>
 
 <div class='grid-container' (mouseenter)='iconsHovered = true' (mouseleave)='iconsHovered = false'>
@@ -78,11 +78,11 @@
                         <th class='number'>#</th>
                         <th>Camper Name</th>
                         <th class='btn'>
-                            <span class='sort-by' (click)='loadMonthlyPoints("recent")'>Points in past 30 days</span>
+                            <span class='sort-by' (click)='doSearch("recent")'>Points in past 30 days</span>
                             <span class='arrow' [class.desc]='isDesc' *ngIf='state === 1'></span>
                         </th>
                         <th class='btn'>
-                            <span class='sort-by' (click)='loadAllTimePoints("alltime")'>All time points</span>
+                            <span class='sort-by' (click)='doSearch("alltime")'>All time points</span>
                             <span class='arrow' [class.desc]='isDesc' *ngIf='state === 2'></span>
                         </th>
                     </tr>
