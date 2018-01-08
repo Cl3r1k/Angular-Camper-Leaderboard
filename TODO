@@ -40,7 +40,7 @@ Todos:
                 ✔ Steaky-footer on CSS Grid (look here https://codepen.io/matuzo/pen/JOyzOj?editors=1100) @done(17-12-22 15:55)
             
             ✔ Correct e2e test @done(17-12-28 18:03)
-            ☐ Write Unit tests
+            ✔ Write Unit tests @done(18-01-08 18:37)
             ☐ Deploy on gh-pages
             ☐ Deploy on codepen (https://codepen.io/Cl3r1k/pen/)
             

@@ -6,7 +6,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/switchMap';
 
-class User {
+export class User {
     username: string;
     recent: number;
     alltime: number;
