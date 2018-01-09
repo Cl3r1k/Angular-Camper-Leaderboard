@@ -5,48 +5,46 @@
 Todos:
     New:
         Current:
-            ✔ Update Readme.md @done(17-12-22 15:50)
-
-            ✔ Use preloader for response (show loader until list will be updated from response) @done(17-12-27 17:48)
-            ✔ Add social icons (look here https://blog.angular-university.io/rxjs-switchmap-operator/) @done(18-01-03 18:40)
-            ✔ Use switchMap to perform only last request (https://codecraft.tv/courses/angular/http/http-with-observables/) @done(18-01-05 18:09)
-    
-            ✔ Write business logic (look here https://codepen.io/freeCodeCamp/full/eZGMjp) @done(17-12-28 18:00)
-                ✔ I can see a table of the freeCodeCamp campers who've earned the most brownie points in the past 30 days. @done(17-12-25 18:53)
-                ✔ I can see how many brownie points they've earned in the past 30 days, and how many they've earned total. @done(17-12-25 18:53)
-                ✔ I can toggle between sorting the list by how many brownie points they've earned in the past 30 days and by how many brownie points they've earned total. @done(17-12-27 17:51)
-                ✔ Make asceding/descending sorting @done(17-12-28 17:47)
-                    
-            ✔ Change header icon @done(17-12-28 17:58)
-            ✔ Change footer icon @done(17-12-28 17:58)
-
-            ✔ Use onHover animation and transition @done(17-12-25 18:52)
-
-            Hint:
-                ✔ To get the top 100 campers for the last 30 days: https://fcctop100.herokuapp.com/api/fccusers/top/recent @done(17-12-28 17:47)
-                ✔ To get the top 100 campers of all time: https://fcctop100.herokuapp.com/api/fccusers/top/alltime @done(17-12-28 17:47)
-
-            ✔ Build UI (examples are bellow) @done(18-01-03 18:39)
-                ✔ Some UI ideas from: @done(18-01-03 18:39)
-                    `https://premium-volleyball.surge.sh/` (Header centered, highlight hover sorting fields)
-                    `https://fcctop100.herokuapp.com/`
-                    `https://codepen.io/AlexOleynyk/pen/gLLyNq?q=Camper+Leaderboard&limit=all&type=type-pens`
-                    `https://codepen.io/vhfmag/pen/YwJaoG?limit=all&page=5&q=Camper+Leaderboard`
-
-            ✔ Add 'Fork on github' in the corner or github share link (like here https://codepen.io/hmps/pen/kiFum) (used ribbon) @done(17-12-22 15:56)
-            ✔ Add spinner before Angular component loading (use https://jsfiddle.net/Cl3r1k/hyqdzgfn/) @done(17-12-22 15:55)
-            ✔ Change flexbox to CSS Grids (look here https://proglib.io/p/css-grid-vs-bootstrap/ and here https://proglib.io/p/css-grid/) @done(17-12-22 15:55)
-            ✔ Add footer (preferably fixed bottom) @done(17-12-22 15:55)
-                ✔ Steaky-footer on CSS Grid (look here https://codepen.io/matuzo/pen/JOyzOj?editors=1100) @done(17-12-22 15:55)
-            
-            ✔ Correct e2e test @done(17-12-28 18:03)
-            ✔ Write Unit tests @done(18-01-08 18:37)
-            ✔ Deploy on gh-pages @done(18-01-08 18:40)
-            ☐ Deploy on codepen (https://codepen.io/Cl3r1k/pen/)
             
     Done:
+        ✔ Update Readme.md @done(17-12-22 15:50)
+
+        ✔ Use preloader for response (show loader until list will be updated from response) @done(17-12-27 17:48)
+        ✔ Add social icons (look here https://blog.angular-university.io/rxjs-switchmap-operator/) @done(18-01-03 18:40)
+        ✔ Use switchMap to perform only last request (https://codecraft.tv/courses/angular/http/http-with-observables/) @done(18-01-05 18:09)
+
+        ✔ Write business logic (look here https://codepen.io/freeCodeCamp/full/eZGMjp) @done(17-12-28 18:00)
+            ✔ I can see a table of the freeCodeCamp campers who've earned the most brownie points in the past 30 days. @done(17-12-25 18:53)
+            ✔ I can see how many brownie points they've earned in the past 30 days, and how many they've earned total. @done(17-12-25 18:53)
+            ✔ I can toggle between sorting the list by how many brownie points they've earned in the past 30 days and by how many brownie points they've earned total. @done(17-12-27 17:51)
+            ✔ Make asceding/descending sorting @done(17-12-28 17:47)
+                
+        ✔ Change header icon @done(17-12-28 17:58)
+        ✔ Change footer icon @done(17-12-28 17:58)
+
+        ✔ Use onHover animation and transition @done(17-12-25 18:52)
+
+        Hint:
+            ✔ To get the top 100 campers for the last 30 days: https://fcctop100.herokuapp.com/api/fccusers/top/recent @done(17-12-28 17:47)
+            ✔ To get the top 100 campers of all time: https://fcctop100.herokuapp.com/api/fccusers/top/alltime @done(17-12-28 17:47)
+
+        ✔ Build UI (examples are bellow) @done(18-01-03 18:39)
+            ✔ Some UI ideas from: @done(18-01-03 18:39)
+                `https://premium-volleyball.surge.sh/` (Header centered, highlight hover sorting fields)
+                `https://fcctop100.herokuapp.com/`
+                `https://codepen.io/AlexOleynyk/pen/gLLyNq?q=Camper+Leaderboard&limit=all&type=type-pens`
+                `https://codepen.io/vhfmag/pen/YwJaoG?limit=all&page=5&q=Camper+Leaderboard`
+
+        ✔ Add 'Fork on github' in the corner or github share link (like here https://codepen.io/hmps/pen/kiFum) (used ribbon) @done(17-12-22 15:56)
+        ✔ Add spinner before Angular component loading (use https://jsfiddle.net/Cl3r1k/hyqdzgfn/) @done(17-12-22 15:55)
+        ✔ Change flexbox to CSS Grids (look here https://proglib.io/p/css-grid-vs-bootstrap/ and here https://proglib.io/p/css-grid/) @done(17-12-22 15:55)
+        ✔ Add footer (preferably fixed bottom) @done(17-12-22 15:55)
+            ✔ Steaky-footer on CSS Grid (look here https://codepen.io/matuzo/pen/JOyzOj?editors=1100) @done(17-12-22 15:55)
         
+        ✔ Correct e2e test @done(17-12-28 18:03)
+        ✔ Write Unit tests @done(18-01-08 18:37)
+        ✔ Deploy on gh-pages @done(18-01-08 18:40)
 
     Canceled:
         ✘ Use lazyLoading for images -> (next time) @cancelled(18-01-03 18:40)
-        
+        ✘ Deploy on codepen -> shared github pages instead codepen @cancelled(18-01-09 18:42)
